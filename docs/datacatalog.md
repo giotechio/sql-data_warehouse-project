@@ -43,7 +43,7 @@ start_date	DATE	The date when the product became available for sale or use, stor
 - purpose: Stores transactional sales data for analytical purposes
 - columns are :
 Column Name	|Data Type	|Description
-------------|-----------|-----------|
+******************************************************
 order_number |	NVARCHAR(50)	A unique alphanumeric identifier for each sales order( e.g. ‘SO55446’)
 product_key	| INT	Surrogate key linking the order to the product dimension table
 customer_key |	INT	Surrogate key linking the order to the customer dimension table
