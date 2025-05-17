@@ -7,6 +7,7 @@ The Gold layer is the Business - level data representation, structured to suppor
 - purpose: stores customer details enriched with demographic and geographic data
 - columns are :
 Column Name	| Data Type	| Description
+-------------------------------------
 customer_key	|INT	| Surrogate key uniquely identifying each customer record in the dimension table
 customer_id	INT	Unique numerical identifier assigned to each customer
 customer_number	NVARCHAR(50)	Alphanumeric identifier representing the customer, used for tracking and referencing
@@ -22,6 +23,7 @@ create_date	DATE	The date and time when the customer record was created in the s
 - purpose: Provides information about the products and their attributes
 - columns are :
 Column Name	Data Type	Description
+-------------------------------------
 product_key	INT	Surrogate key uniquely identifying each product record in the dimension table
 product_id	INT	A unique identifier assigned to the product for internal tracking and referencing
 product_number	NVARCHAR(50)	A Structured Alphanumeric code representing the product, often used for categorization of inventory
