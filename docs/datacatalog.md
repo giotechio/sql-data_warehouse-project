@@ -6,8 +6,8 @@ The Gold layer is the Business - level data representation, structured to suppor
 1. gold.dim_customers
 - purpose: stores customer details enriched with demographic and geographic data
 - columns are :
-Column Name	Data Type	Description
-customer_key	INT	Surrogate key uniquely identifying each customer record in the dimension table
+Column Name	| Data Type	| Description
+customer_key	|INT	| Surrogate key uniquely identifying each customer record in the dimension table
 customer_id	INT	Unique numerical identifier assigned to each customer
 customer_number	NVARCHAR(50)	Alphanumeric identifier representing the customer, used for tracking and referencing
 first_name	NVARCHAR(50)	The customer’s first name, as recorded in the system
@@ -19,7 +19,8 @@ birth_date	DATE	The date of birth of the customer, formatted as YYYY-MM-DD(e.g. 
 create_date	DATE	The date and time when the customer record was created in the system
    
 2. gold.dim_products
-Provides information about the products and their attributes
+- purpose: Provides information about the products and their attributes
+- columns are :
 Column Name	Data Type	Description
 product_key	INT	Surrogate key uniquely identifying each product record in the dimension table
 product_id	INT	A unique identifier assigned to the product for internal tracking and referencing
@@ -37,9 +38,9 @@ start_date	DATE	The date when the product became available for sale or use, stor
 
 
 3. gold.fact_sales
-Stores transactional sales data for analytical purposes
-
-Column Name	Data Type	Description
+- purpose: Stores transactional sales data for analytical purposes
+- columns are :
+Column Name	|Data Type	|Description
 order_number	NVARCHAR(50)	A unique alphanumeric identifier for each sales order( e.g. ‘SO55446’)
 product_key	INT	Surrogate key linking the order to the product dimension table
 customer_key	INT	Surrogate key linking the order to the customer dimension table
